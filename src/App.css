@@ -131,3 +131,38 @@
     transform: rotate(360deg);
   }
 }
+
+/*Eventos.js*/
+.form-container{
+  background-color: #051937;
+  width: 1200px;
+  height: 60vh;
+  margin: 20px;
+  overflow: hidden;
+  padding: 40px 20px;
+}
+
+.titulo-Izquierda {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+}
+
+.titulo-Centrado {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.titulo-Derecha {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: right;
+}
+
+.texto-color {
+  color: #ffa17a;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.texto-color2{
+  color: #000;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

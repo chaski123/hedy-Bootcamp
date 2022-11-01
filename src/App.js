@@ -2,7 +2,6 @@ import './App.css';
 import Users from './Async';
 import Contador from './Contador';
 import {Button} from './Button';
-import {useState} from 'react'
 import Fetch from './Fetch';
 import Axios from './axios';
 
@@ -18,6 +17,10 @@ import {
 import { ListaClases, Clase } from './ListaClases';
 import { ErrorPage } from './ErrorPage';
 import { Home } from './Home';
+import Eventos from './Eventos';
+import Forms  from './Form';
+import InputsSync from './LevantandoEstado';
+
 
 function App() {
   /*const[showGato, setShowGato] = useState(false);
@@ -34,6 +37,9 @@ function App() {
               <Link to={`/clase`}><Button value="Lista de Clases"/></Link>
               <Link to={`/async`}><Button value="Asincronismo"/></Link>
               <Link to={`/contador`}><Button value="Contador"/></Link>
+              <Link to={`/evento`}><Button value="Evento"/></Link>
+              <Link to={`/form`}><Button value="Form"/></Link>
+              <Link to={`/lift`}><Button value="lift"/></Link>
             </div>
             <div className='Nav-routes'>
               <Routes>
@@ -44,6 +50,9 @@ function App() {
                 <Route path="/clase/:id" element={<Clase/>} />
                 <Route path="/async" element={<Users/>} />
                 <Route path="/contador" element={<Contador/>} />
+                <Route path="/evento" element={<Eventos/>} />
+                <Route path="/form" element={<Forms/>} />
+                <Route path="/lift" element={<InputsSync/>} />
                 <Route path='*' element={<ErrorPage/>} />
               </Routes>
             </div>
