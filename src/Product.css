@@ -23,7 +23,7 @@
   margin-bottom: 15px;
 }
 
-.product > button {
+button {
   background: #f0c14b;
   border: 1px solid;
   margin-top: 10px;
@@ -42,6 +42,25 @@
 
 button {
   cursor: pointer;
+}
+
+.button{
+  display: block;
+  appearance: none;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+
+.button .icono {
+  font-size: 18px;
+}
+
+.button:hover {
+  background-color: #051937;
+  border: none;
 }
 
 .Estrella {
