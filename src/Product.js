@@ -53,7 +53,6 @@ function Product({ id, title, image, price, rating, info}) {
         </div>
       </div>
       <img src={image} alt="" />
-      <p>{info}</p>
       <Link to={"/productDetails"}>
       {id === 1?
         <button onClick={itemShow} className="button"><AiFillEye className="icono"/></button>: id === 2? 
