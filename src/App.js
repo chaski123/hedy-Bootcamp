@@ -144,7 +144,7 @@ function App() {
           </div>
         </Route>
         }
-        <Route path={"/productDetails"}>
+        <Route path={"/productDetails/:id"}>
           <Header/>
            <ProductDetail/>
           </Route> 
