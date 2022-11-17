@@ -1,7 +1,7 @@
 import './App.css';
 import Users from './Async';
 import Contador from './Contador';
-import {Button} from './Button';
+import { Button } from './Button';
 import Fetch from './Fetch';
 import Axios from './axios';
 
@@ -20,6 +20,8 @@ import { Home } from './Home';
 import Eventos from './Eventos';
 import Forms  from './Form';
 import InputsSync from './LevantandoEstado';
+import { ContextConsumer } from './UseContext';
+//import ContextApp from './UseContextApp';
 
 
 function App() {
@@ -40,6 +42,7 @@ function App() {
               <Link to={`/evento`}><Button value="Evento"/></Link>
               <Link to={`/form`}><Button value="Form"/></Link>
               <Link to={`/lift`}><Button value="lift"/></Link>
+              <Link to={`/context`}><Button value="UseContext"/></Link>
             </div>
             <div className='Nav-routes'>
               <Routes>
@@ -53,6 +56,7 @@ function App() {
                 <Route path="/evento" element={<Eventos/>} />
                 <Route path="/form" element={<Forms/>} />
                 <Route path="/lift" element={<InputsSync/>} />
+                <Route path="/context" element={<ContextConsumer/>} />
                 <Route path='*' element={<ErrorPage/>} />
               </Routes>
             </div>
@@ -62,6 +66,7 @@ function App() {
   );
 }
 
+export default App;
 
 /*<Fetch/>
 <Auto/>
@@ -81,4 +86,4 @@ function App() {
         <Users/>
         <Contador/>*/
 
-export default App;
+
